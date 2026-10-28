@@ -1,0 +1,6 @@
+{
+ "0811212801": "Swift J0243: alvo a 3,3' do apontamento (RA_OBJ provisório do ToO); a fonte fica fora da faixa de timing e só os halos entram. Pulso detectado, mas fluxo e PF absolutos inválidos (L_XMM 450x abaixo do MAXI no mesmo dia).",
+ "0092820801": "PSR B1259: fundo de timing contaminado nas colunas de borda; taxa líquida ~0.",
+ "0505280101": "4U 0115: pulso não detectado (H_p com tentativas 0,04).",
+ "0506190101": "V 0332: pulso não detectado; fonte em quiescência, 57 contagens líquidas."
+}

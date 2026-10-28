@@ -1,0 +1,8 @@
+# third-party data, downloaded by code/baixar_dados.py
+code/dados/gbm/
+code/dados/maxi/
+# regenerated tables and figures
+output/
+results/figuras/
+__pycache__/
+*.pyc

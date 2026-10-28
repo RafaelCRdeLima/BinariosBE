@@ -1,0 +1,192 @@
+{
+ "obs": {
+  "0151380101": {
+   "H_p": 0.0,
+   "n_indep": 1.0,
+   "p_tentativas": 0.0,
+   "frequencia_fixa": true,
+   "detectado": true,
+   "n_familia_fixos": 1,
+   "p_corrigido_n_fixos": 0.0,
+   "marginal": false,
+   "z2_2_perfil": 10523.46733134421,
+   "pf_rms": 0.2527799169876106
+  },
+  "0505280101": {
+   "H_p": 0.0023034353831709914,
+   "n_indep": 64.49213204778854,
+   "p_tentativas": 0.13819376048376394,
+   "frequencia_fixa": false,
+   "detectado": false,
+   "z2_2_perfil": 16.67393213677046,
+   "pf_rms": 0.46777508586862043,
+   "pf_rms_lim_sup_3sigma": 0.8098322182629133,
+   "sem_restricao": false
+  },
+  "0506190101": {
+   "H_p": 0.017189847218015884,
+   "n_indep": 37.49561202485218,
+   "p_tentativas": 0.47803146079628656,
+   "frequencia_fixa": false,
+   "detectado": false,
+   "z2_2_perfil": 11.187400873672727,
+   "pf_rms": 0.5389578152466913,
+   "pf_rms_lim_sup_3sigma": 1.0641327252425004,
+   "sem_restricao": true
+  },
+  "0600980101": {
+   "H_p": 0.0,
+   "n_indep": 15.998713368248191,
+   "p_tentativas": 0.0,
+   "frequencia_fixa": false,
+   "detectado": true,
+   "z2_2_perfil": 30229.850184289568,
+   "pf_rms": 0.14132143973393438
+  },
+  "0674180101": {
+   "H_p": 5.8321997693941075e-198,
+   "n_indep": 17.498239155027676,
+   "p_tentativas": 1.0205322636475535e-196,
+   "frequencia_fixa": false,
+   "detectado": true,
+   "z2_2_perfil": 1164.5058328306516,
+   "pf_rms": 0.10534849370174108
+  },
+  "0763470301": {
+   "H_p": 0.0,
+   "n_indep": 15.999811251920944,
+   "p_tentativas": 0.0,
+   "frequencia_fixa": false,
+   "detectado": true,
+   "z2_2_perfil": 10680.106659620127,
+   "pf_rms": 0.039485623199989585
+  },
+  "0763470401": {
+   "H_p": 8.8744664e-317,
+   "n_indep": 15.998294469635377,
+   "p_tentativas": 1.41976327e-315,
+   "frequencia_fixa": false,
+   "detectado": true,
+   "z2_2_perfil": 3160.5032781805685,
+   "pf_rms": 0.025388916348336853
+  },
+  "0790180301": {
+   "H_p": 8.067693827428473e-24,
+   "n_indep": 109.96956666021305,
+   "p_tentativas": 8.872007941495847e-22,
+   "frequencia_fixa": false,
+   "detectado": true,
+   "z2_2_perfil": 134.2541769462929,
+   "pf_rms": 0.5770664915938427
+  },
+  "0804940201": {
+   "H_p": 1.4095250227133253e-12,
+   "n_indep": 49.98772899174742,
+   "p_tentativas": 7.045895484004775e-11,
+   "frequencia_fixa": false,
+   "detectado": true,
+   "z2_2_perfil": 70.21346914371232,
+   "pf_rms": 0.6217720549300574
+  },
+  "0811212801": {
+   "H_p": 2.546578011520106e-103,
+   "n_indep": 15.997976723567106,
+   "p_tentativas": 4.0740095753046466e-102,
+   "frequencia_fixa": false,
+   "detectado": true,
+   "z2_2_perfil": 289.87050293874785,
+   "pf_rms": 0.16474303430814952
+  },
+  "0811212901": {
+   "H_p": 0.0,
+   "n_indep": 16.00466760394397,
+   "p_tentativas": 0.0,
+   "frequencia_fixa": false,
+   "detectado": true,
+   "z2_2_perfil": 24899.204758794098,
+   "pf_rms": 0.12572665303769562
+  },
+  "0883350301": {
+   "H_p": 0.00030810953388179217,
+   "n_indep": 1.0,
+   "p_tentativas": 0.00030810953388179217,
+   "frequencia_fixa": true,
+   "detectado": true,
+   "n_familia_fixos": 5,
+   "p_corrigido_n_fixos": 0.0015395986470081707,
+   "marginal": true,
+   "z2_2_perfil": 24.13074060016325,
+   "pf_rms": 0.48652773798886373
+  },
+  "0883350401": {
+   "H_p": 3.4662433420604936e-08,
+   "n_indep": 1.0,
+   "p_tentativas": 3.4662433420604936e-08,
+   "frequencia_fixa": true,
+   "detectado": true,
+   "n_familia_fixos": 5,
+   "p_corrigido_n_fixos": 1.7331215508818218e-07,
+   "marginal": false,
+   "z2_2_perfil": 45.58990246465919,
+   "pf_rms": 0.4592277917200398
+  },
+  "0883350901": {
+   "H_p": 0.039812060647563395,
+   "n_indep": 1.0,
+   "p_tentativas": 0.039812060647563395,
+   "frequencia_fixa": true,
+   "detectado": false,
+   "n_familia_fixos": 5,
+   "p_corrigido_n_fixos": 0.18382886162703893,
+   "marginal": false,
+   "z2_2_perfil": 9.883197884997706,
+   "pf_rms": 0.35606772597791503,
+   "pf_rms_lim_sup_3sigma": 0.8470124825198979,
+   "sem_restricao": false
+  },
+  "0883351001": {
+   "H_p": 0.631151619817295,
+   "n_indep": 1.0,
+   "p_tentativas": 0.631151619817295,
+   "frequencia_fixa": true,
+   "detectado": false,
+   "n_familia_fixos": 5,
+   "p_corrigido_n_fixos": 0.9931728506606845,
+   "marginal": false,
+   "pf_rms_lim_sup_3sigma": 0.8853081202595569,
+   "sem_restricao": false,
+   "z2_2_perfil": NaN
+  },
+  "0883351601": {
+   "H_p": 0.0021571712660330474,
+   "n_indep": 1.0,
+   "p_tentativas": 0.0021571712660330474,
+   "frequencia_fixa": true,
+   "detectado": false,
+   "n_familia_fixos": 5,
+   "p_corrigido_n_fixos": 0.010739422724777918,
+   "marginal": false,
+   "z2_2_perfil": 14.930031127937362,
+   "pf_rms": 0.3455176964352437,
+   "pf_rms_lim_sup_3sigma": 0.702097835717983,
+   "sem_restricao": false
+  },
+  "0883351701": {
+   "H_p": 3.3570135568503195e-123,
+   "n_indep": 25.504450403040753,
+   "p_tentativas": 8.56187857630244e-122,
+   "frequencia_fixa": false,
+   "detectado": true,
+   "z2_2_perfil": 691.6858625128843,
+   "pf_rms": 0.26239474401635593
+  }
+ },
+ "fixos": [
+  "0151380101",
+  "0883350301",
+  "0883350401",
+  "0883350901",
+  "0883351001",
+  "0883351601"
+ ]
+}

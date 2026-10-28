@@ -1,0 +1,7 @@
+fonte,d_kpc,d_err_kpc,E_cyc_keV,ref_d,ref_E,obs
+4U 0115+63,5.7,0.45,11.0,"Reig 2026 Tab.1 (Gaia DR3, Bailer-Jones+2021 photogeo)","Müller+2013 e Tsygankov+2007 (fundamental ~10,3-11,2 keV)",Roy+2024 vê duas fundamentais (12 e 16 keV) em 2023
+V 0332+53,5.9,0.4,28.0,Reig 2026 Tab.1 (Gaia DR3),"Doroshenko+2017 (NuSTAR 27,9-29,0 keV); Cusumano+2016",cai com L acima de ~1e37
+1A 0535+262,1.77,0.06,46.0,Reig 2026 Tab.1 (Gaia DR3),"Caballero+2007 (45,5-46,7 keV); Tsygankov+2019; Kong+2021",
+Swift J0243.6+6124,5.2,0.25,146,Reig 2026 Tab.1 (Gaia DR3),Kong+2022 (120-146 keV conforme a fase; 146 no máximo),só no pico do outburst gigante
+X Per,0.60,0.015,28.6,Reig 2026 Tab.1 (Gaia DR3),"Coburn+2001 (contestada; 20,9-32,7 keV conforme a fase)",linha contestada
+PSR B1259-63,2.167,0.056,,"Bailer-Jones+2021 (VizieR I/352); VLBI 2,6+0,4-0,3 (Miller-Jones+2018)",,

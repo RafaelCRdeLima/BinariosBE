@@ -1,0 +1,87 @@
+fonte,tipo,L_erg_s,erro_ou_faixa,banda_L,d_usada_kpc,ref,obs,h1
+4U 0115+63,inversao_Ecyc_L,5e37,~,3-100 keV,7,Tsygankov+2007,Salto de E_cyc de ~11 para ~14-16 keV quando L cai abaixo de ~5e37 (outbursts 1999 e 2004). CONTESTADO por Müller+2013 (artefato do contínuo NPEX/PLCUT).,fora: inversão E_cyc-L contestada (artefato do contínuo segundo Müller+2013; o paper exclui esses E_cyc)
+4U 0115+63,inversao_Ecyc_L,3e37,"~ (""around"")",3-50 keV,7,Müller+2013,"Salto quase descontínuo de E_cyc com histerese, obtido só com NPEX/PLCUT; com cutoffpl+gaussiana 10 keV não há correlação. Status: artefato segundo os autores.",fora: os próprios autores atribuem o salto ao modelo de contínuo
+4U 0115+63,inversao_Ecyc_L,1e38,"~ (tentativo, 1 ponto)",3-50 keV,7,Roy+2024,Possível troca de correlação positiva para negativa só na fundamental de 16 keV e seus harmônicos; não aparece na de 12 keV. Autores chamam de 'critical luminosity ~1e38'.,"fora: tentativo, um ponto, na fundamental de 16 keV que o paper exclui"
+4U 0115+63,L_crit_inferida,1e38,~,3-50 keV,7,Roy+2024,'The value of critical luminosity for 4U 0115+63 is ~1e38 erg/s'. Baseado num único ponto em alta L.,
+4U 0115+63,L_crit_inferida,4e37,~,não especificada (valor teórico),,Ferrigno+2011,Valor crítico 'para as características de 4U 0115+63' atribuído a Basko & Sunyaev 1976; não é medida.,
+4U 0115+63,L_crit_inferida,2.24e37,"teórico (E*=17.0 keV, longo prazo)",3-60 keV (faixa dos dados da amostra),8.0,Becker+2012,Calculado pelo modelo; pulso a pulso: 2.17e37 (E*=16.5 keV). Distância 8.0 kpc da Tab.1 (Negueruela & Okazaki 2001).,
+4U 0115+63,troca_ramo_HID,1e37-4e37,faixa da amostra (0.06-0.3 L_Edd),3-30 keV,8.1,Reig & Nespoli 2013,Faixa geral da transição HB->DB na amostra; o paper não imprime o valor por fonte. 4U 0115+63 mostra os dois ramos; L_pico/L_crit≈9 na Tab.1.,"fora: faixa da amostra inteira de Reig & Nespoli, não um valor da fonte (txt:3103-3106)"
+4U 0115+63,L_propeller,1.4e36,± 0.4e36,bolométrica (0.5-10 keV x 2),7,Tsygankov+2016,"Outburst de 2015 (Swift/XRT, MJD 57329-57388). Correção bolométrica fator 2 (fluxo 0.5-10 keV ~50% do 0.5-100 keV); incerteza da correção 10-20% incluída.",
+4U 0115+63,L_propeller,7e35,~ (queda abrupta observada),"0.5-10 keV (não absorvida, sem correção bolométrica)",7,Tsygankov+2016,Limiar visto na curva de luz antes da correção bolométrica.,
+4U 0115+63,outro,1e36,~ (até),bolométrica,7,Tsygankov+2016,"Retomada temporária de acreção perto do periastro (MJD 57354), compatível com L_lim.",
+4U 0115+63,L_quiescencia,few e33,"""a few x 1e33""",0.5-10 keV,7,Tsygankov+2016,Estado propeller (espectro corpo negro kT~0.5 keV).,
+4U 0115+63,L_pico_outburst,15.5e37,± 1.1e37,3-100 keV,7,Tsygankov+2007,"Máximo tabelado do outburst de 1999 (RXTE, MJD 51246.83). O texto dá a faixa ~(1-15)e37.",
+4U 0115+63,L_pico_outburst,13.4e37,± 1.4e37,3-100 keV,7,Tsygankov+2007,"Máximo tabelado do outburst de 2004 (RXTE, MJD 53262.20).",
+4U 0115+63,L_pico_outburst,1.4e38,,3-30 keV,8.1,Reig & Nespoli 2013,Outburst 2004; L_pico/L_Edd=0.8; L_pico/L_crit=9.,
+4U 0115+63,L_pico_outburst,1.2e38,,2-100 keV,7,Ferrigno+2011,Conversão de 2e-8 erg/cm2/s (outburst 1999) dada no rodapé da Tab.1.,
+4U 0115+63,L_pico_outburst,10.18e37,+0.04/-0.04 e37,3-50 keV (absorvida),7,Müller+2013,Maior L do outburst de 2008 entre as 14 épocas.,
+4U 0115+63,L_pico_outburst,12.08e37,+0.02/-0.06 e37,3-50 keV,7,Roy+2024,Primeira obs NuSTAR do outburst de 2023 (MJD 60043); texto diz que o outburst chegou a 1e38.,
+V 0332+53,inversao_Ecyc_L,0.7e37,+0.7/-0.1 e37,3-80 keV (fluxo observado),7,Doroshenko+2017,Ajuste linear quebrado a NuSTAR+BAT corrigido de deriva linear -0.015 keV/d; inclinações -0.144(4) acima e +1.4(1.2) keV/1e37 abaixo; preferido só a ~3 sigma.,sim
+V 0332+53,L_crit_inferida,0.7e37,+0.7/-0.1 e37,3-80 keV,7,Doroshenko+2017,Chamado explicitamente L_crit; autores dizem que a transição não é robusta.,
+V 0332+53,inversao_Ecyc_L,2.1e37,± 0.4e37,5-78 keV,7,Vybornov+2018,Análise pulso a pulso dos mesmos dados NuSTAR; inclinações -0.139±0.007 e +0.21±0.08 keV/1e37; ~22 sigma; transição em MJD~57288. 'L_cr' no texto.,sim
+V 0332+53,L_crit_inferida,4.06e37,"teórico (E*=29.7 keV, longo prazo)",3-100 keV (faixa dos dados),7.5,Becker+2012,Pulso a pulso: 3.67e37 (E*=27.0 keV). Distância 7.5 kpc da Tab.1 (Negueruela+1999).,
+V 0332+53,L_crit_inferida,1e37,"~ (L*, teórico)",não especificada,,Tsygankov+2006,Valor crítico de Basko & Sunyaev 1976 citado; não é medida.,
+V 0332+53,transicao_perfil,7.3e37,~,3-100 keV,7,Tsygankov+2006,A partir da rev. 284 (MJD 53410.9): perto e acima da energia ciclotrônica o perfil de dois picos vira um pico assimétrico; abaixo da linha vira pico único com transição abrupta para dois picos acima da linha. Mudanças em energias moles já desde a rev. 274.,sim
+V 0332+53,troca_ramo_HID,1e37-4e37,faixa da amostra (0.06-0.3 L_Edd),3-30 keV,7,Reig & Nespoli 2013,Faixa geral; valor por fonte não impresso. V 0332+53 mostra os dois ramos; L_pico/L_crit=10 na Tab.1.,"fora: faixa da amostra inteira de Reig & Nespoli, não um valor da fonte (txt:3103-3106)"
+V 0332+53,L_propeller,2.0e36,± 0.4e36,bolométrica (0.5-10 keV x 2),7,Tsygankov+2016,"Outburst de 2015 (Swift/XRT, MJD 57293-57393).",
+V 0332+53,L_propeller,1e36,~ (queda abrupta observada),0.5-10 keV (não absorvida),7,Tsygankov+2016,Antes da correção bolométrica.,
+V 0332+53,L_propeller,2.6e36,± 0.9e36,não especificada aqui,,Stella+1986 (citado em Tsygankov+2016),EXOSAT; fonte secundária (Stella+1986).,
+V 0332+53,outro,2e36,~ (até),bolométrica,7,Tsygankov+2016,Retomada temporária de acreção perto do periastro (MJD 57358).,
+V 0332+53,L_quiescencia,few e33,"""a few x 1e33""",0.5-10 keV,7,Tsygankov+2016,Estado propeller.,
+V 0332+53,L_pico_outburst,48.4e37,± 1.2e37,3-100 keV,7,Tsygankov+2006,"Maior L tabelada (RXTE, MJD 53367.2) do outburst 2004-05; a cobertura começa perto do máximo.",
+V 0332+53,L_pico_outburst,3.4e38,,3-30 keV,7,Reig & Nespoli 2013,Outburst 2004-05; L_pico/L_Edd=2.0; L_pico/L_crit=10.,
+V 0332+53,L_pico_outburst,2.5e38,~,1-150 keV,7,Cusumano+2016,"Outburst 2015 (BAT), pico de ~10 dias.",
+V 0332+53,L_pico_outburst,6e36,~,não especificada,7,Doroshenko+2017,"Outburst menor de 2016 (perto do periastro), quase indetectável pelo BAT.",
+1A 0535+262,inversao_Ecyc_L,6.7e37,± 0.4e37,2-150 keV,2,Kong+2021,"Ajuste linear quebrado sem deriva temporal: E0=46.8±0.14 keV, k1=-0.04±0.04, k2=0.49±0.05 (sinal de k2 impresso positivo, embora o texto diga anticorrelação acima de L_break).",sim
+1A 0535+262,inversao_Ecyc_L,6.37e37,± 0.45e37,2-150 keV,2,Kong+2021,"Com deriva linear de +0.071 keV/d removida: k1=0.23±0.05 (abaixo), k2=-0.41±0.04 (acima). Legenda da Fig.4 imprime '6.37 x 1e38' (erro tipográfico).","duplicata: mesmos dados da linha 35 (Kong+2021), só com a deriva removida"
+1A 0535+262,L_crit_inferida,6.7e37,± 0.4e37,2-150 keV,2,Kong+2021,'Lbreak = Lcrit/1e37 erg/s = 6.7 ± 0.4'. Legenda da Fig.5 imprime '6.7 x 1e38'.,
+1A 0535+262,L_crit_inferida,6.78e37,teórico (E*=48.0 keV),3-50 keV (faixa dos dados),2.0,Becker+2012,Fonte subcrítica no modelo.,
+1A 0535+262,L_crit_inferida,7e37,≈ (calculado),3-30 keV,2.4,Reig & Nespoli 2013,Calculado com L_crit ≈ 1.28e37 (E_cyc/10 keV)^(16/15) e E_cyc~50 keV; 'ligeiramente maior que o pico' (6.8e37).,
+1A 0535+262,outro_Ecyc_L,1e37,"~ (<~1e37, L/L_Edd<0.1)",3-30 keV,2.4,Reig & Nespoli 2013,Início da correlação POSITIVA E_cyc-L no outburst 2009-10 (não é inversão). INCONSISTÊNCIA interna: na discussão o mesmo paper diz 'acima de ~3e37'.,
+1A 0535+262,outro_Ecyc_L,3e37,~,3-30 keV,2.4,Reig & Nespoli 2013,Mesma afirmação com outro valor (ver linha acima).,
+1A 0535+262,troca_ramo_HID,6e36,~ (L média no ramo LIB),1-100 keV (convenção do paper; não repetida na frase),1.8,Reig+2022,"Ramo de baixa intensidade (LIB), associado a L_coul (Becker+2012) com B~4e12 G. Os autores ligam IIB=subcrítico e HIB=supercrítico; o HIB só começa perto do pico.","fora: L média no ramo LIB, que os autores ligam a L_coul, não a L_crit (txt:976-981)"
+1A 0535+262,troca_ramo_HID,1.7e37,~ (700 c/s),2-30 keV,1.8,Reig+2022,Salto da trilha de declínio para a de subida nas razões de dureza de baixa energia; na discussão: '~2e37'. Origem não esclarecida.,sim
+1A 0535+262,L_disco_frio,7e34,~,0.5-100 keV,2,Tsygankov+2019,Acreção estável a L muito baixa (NuSTAR dez/2018). O paper cita Doroshenko+2014 para emissão dominada por acreção de disco frio em quiescência ~1e34.,
+1A 0535+262,L_pico_outburst,1.2e38,,2-150 keV,2,Kong+2021,"Outburst gigante nov-dez 2020; obs. do pico: 11.67e37 (MJD 59171, txt:255).",
+1A 0535+262,L_pico_outburst,1e38,~,1-100 keV,1.8,Reig+2022,Mesmo outburst de 2020.,
+1A 0535+262,L_pico_outburst,6.8e37,,3-30 keV,2.4,Reig & Nespoli 2013,Outburst 2009-10; L_pico/L_crit ≲1; ficou no ramo horizontal.,
+1A 0535+262,L_pico_outburst,0.9e37,~,3-50 keV,2,Caballero+2007,Outburst NORMAL (tipo I) de ago-set 2005. Klochkov+2011 cita este outburst como '~1e38' (1A0535+262_Klochkov_2011:834-835): divergência de fator 10.,
+Swift J0243.6+6124,transicao_perfil,1e38,~,0.1-10 keV,7,Wilson-Hodge+2018,"Um pico -> dois picos, mínimo da fração pulsada e virada da dureza perto de ~1e38, na subida (MJD 58037) e na descida (MJD 58135).",duplicata: resumo das linhas 50 e 51
+Swift J0243.6+6124,transicao_perfil,1.08e38,(valor da Tab.1 na MJD 58037.128),0.1-10 keV,7,Wilson-Hodge+2018,Transição da subida (perfil complexo -> pico único simples).,sim
+Swift J0243.6+6124,transicao_perfil,8.76e37,(valor da Tab.1 na MJD 58135.850),0.1-10 keV,7,Wilson-Hodge+2018,Transição da descida.,sim
+Swift J0243.6+6124,transicao_perfil,2e38,"~ (""below"")",0.1-10 keV,7,Wilson-Hodge+2018,Configuração de dois picos dura do pico até L cair abaixo de ~2e38; após MJD 58100 volta a um pico.,sim
+Swift J0243.6+6124,minimo_PF,1.08e38-2.01e38,(Tab.1 nas MJD 58037.1 e 58042.5),0.1-10 keV,7,Wilson-Hodge+2018,Mínimo local da fração pulsada rms na subida em MJD 58037-58042; os valores de L são os das observações NICER dessas datas (leitura minha da Tab.1).,sim
+Swift J0243.6+6124,minimo_PF,2.23e38-1.84e38,(Tab.1 nas MJD 58099.5 e 58106.4),0.1-10 keV,7,Wilson-Hodge+2018,"Segundo mínimo local na descida, MJD 58099-58106 (leitura minha da Tab.1). Legenda da Fig.4: 'turn-around near L > 1e38 (d/7 kpc)^2'.",sim
+Swift J0243.6+6124,troca_ramo_HID,0.2e38-1.1e38,faixa,0.1-10 keV,7,Wilson-Hodge+2018,"Virada HB->DB nas bandas do NICER (subida, MJD 58031-58037; descida MJD 58145-58162).",sim
+Swift J0243.6+6124,troca_ramo_HID,2.6e38-3.4e38,faixa (subida),3-70 keV,7,Wilson-Hodge+2018,"Virada nas bandas do GBM (MJD 58040-58043), escalada pela L NuSTAR.",sim
+Swift J0243.6+6124,troca_ramo_HID,2.2e38-3.4e38,faixa (descida),3-70 keV,7,Wilson-Hodge+2018,MJD 58098-58105.,sim
+Swift J0243.6+6124,troca_ramo_HID,3.2e38-4.3e38,faixa (subida),15-50 keV,7,Wilson-Hodge+2018,Conversão via taxa BAT (1.54e-7 erg/cm2/cnt).,"duplicata: mesma virada do GBM da linha 56, convertida pela taxa do BAT"
+Swift J0243.6+6124,troca_ramo_HID,3.8e38-4.8e38,faixa (descida),15-50 keV,7,Wilson-Hodge+2018,,"duplicata: mesma virada do GBM da linha 57, convertida pela taxa do BAT"
+Swift J0243.6+6124,L_crit_inferida,0.2e38-4.8e38,faixa conservadora,várias (NICER e GBM),7,Wilson-Hodge+2018,Envelope das viradas NICER e GBM.,
+Swift J0243.6+6124,L_crit_inferida,1.7e38,~ (x (d/7 kpc)^(16/15)),teórica (Becker+2012 com B do QPO),7,Wilson-Hodge+2018,B~1e13 G do QPO de 50-70 mHz inserido em L_c ~ 1.5e37 B12^(16/15).,
+Swift J0243.6+6124,outro,5.1e37,~,3-70 keV,7 (corrigida),Jaisawal+2018 (citado em Wilson-Hodge+2018),"L NuSTAR em MJD 58031, perto da virada NICER; fonte secundária.",
+Swift J0243.6+6124,transicao_perfil,3e38,~,bolométrica (XRT 0.5-10 keV com K_bol),7.3,Tsygankov+2018,Mudança de perfil (dois picos iguais -> um pico) e da fração pulsada perto de MJD 58100-58120 (descida) e ~58040 (subida). Chamada de L_crit ~3e38.,sim
+Swift J0243.6+6124,L_crit_inferida,3e38,~,bolométrica,7.3,Tsygankov+2018,'critical luminosity Lcrit ~ 3e38 erg/s'.,
+Swift J0243.6+6124,transicao_perfil,4.4e38,"~ (""4-5e38"")",bolométrica (HXMT 2-150 keV / BAT x 8.2e38),6.8,Doroshenko+2020,"Transição abrupta de timing, espectro e perfil (MJD 58045 subida, 58098 descida), atribuída ao disco interno passar a ser dominado por pressão de radiação (não à coluna).","fora: os autores atribuem ao disco dominado por pressão de radiação, não à coluna (txt:119-125, 651-656)"
+Swift J0243.6+6124,transicao_perfil,1.5e38,"~ (a menor das duas mudanças de perfil, associada ao início da coluna; txt:651-656)",bolométrica,6.8,Doroshenko+2020,As duas mudanças de perfil; a de L menor (perto de MJD 58035/58139) é associada ao início da coluna.,sim
+Swift J0243.6+6124,transicao_perfil,1.5e38,~,não especificada,6.8,Kong+2022,MJD 58035 e 58130.,duplicata: Kong+2022 citam o valor de Doroshenko+2020 (linha 66)
+Swift J0243.6+6124,transicao_perfil,4.4e38,~,não especificada,6.8,Kong+2022,MJD 58050 e 58100. INCONSISTÊNCIA: Kong+2022 associa 1.5e38 a 'pressure dominance of radiation' e 4.4e38 a 'gas shock'; Doroshenko+2020 associa a de L menor à coluna e 4.4e38 ao disco RPD.,duplicata: Kong+2022 citam o valor de Doroshenko+2020 (linha 65)
+Swift J0243.6+6124,L_crit_inferida,2.9e38,calculado,teórica,,Kong+2022,L_crit esperado (Becker+2012) para B=1.6e13 G da linha; não é medida.,
+Swift J0243.6+6124,L_propeller,<6.8e35,limite superior,bolométrica,7.3,Tsygankov+2018,Menor fluxo XRT antes do reabrilhantamento: 1.1e-10 erg/cm2/s; sem transição observada.,
+Swift J0243.6+6124,L_propeller,<=3e34,limite superior,bolométrica (NuSTAR 3-80 keV),6.8,Doroshenko+2020,Acreção continua (pulsações NuSTAR) em quiescência; fator 20 abaixo do limite de Tsygankov+2018.,
+Swift J0243.6+6124,L_propeller,<=6e33,limite superior,bolométrica (XRT 0.5-10 keV ~43% do total),6.8,Doroshenko+2020,Sem pulsações detectáveis nesse nível; autores não afirmam acreção.,
+Swift J0243.6+6124,L_disco_frio,3e34,~,bolométrica,6.8,Doroshenko+2020,"Emissão alimentada por acreção em quiescência profunda; o paper fala em magnetosfera compacta, não em 'disco frio' (tipo usado aqui por analogia: acreção estável em baixa L).",
+Swift J0243.6+6124,L_pico_outburst,2e39,x (d/7 kpc)^2,0.1-10 keV,7,Wilson-Hodge+2018,No texto: ~1.8e39 em MJD 58064; Tab.1: 1.77e39 (MJD 58063.989). Faixa (1.2-2.6)e39 para 5.7-8.4 kpc.,
+Swift J0243.6+6124,L_pico_outburst,5e39,"~ (""up to"")","isotrópica, bolométrica",7.3,Tsygankov+2018,~40 L_Edd.,
+Swift J0243.6+6124,L_pico_outburst,2e39,~,não especificada,6.8,Kong+2022,Período da linha de 120-146 keV.,
+Swift J0243.6+6124,L_pico_outburst,2.5e39,~,não especificada,5.2,Poutanen+2024,Pico de 2017 reescalado para 5.2 kpc (DR3).,
+Swift J0243.6+6124,L_pico_outburst,>=8.4e38,limite inferior (spin-up máximo),acreção (GM Mdot/R),independente de d,Doroshenko+2018,Do spin-up intrínseco máximo 2.2e-10 Hz/s; implica d >~5 kpc.,
+Swift J0243.6+6124,L_pico_outburst,1e38,,0.5-100 keV (correção bolométrica 3.8),5.2,Poutanen+2024,"Outburst de 2023 (IXPE); Obs.1-3: L_bol = 9.1, 5.3, 2.3 e37 (Tab.3, txt:408, 421, 434).",
+X Per,L_tipica,4.2e34,,3-100 keV,0.95,Coburn+2001,Média jul/1998-fev/1999.,
+X Per,L_tipica,1.4e35,~,0.3-10 keV (não absorvida),1,La Palombara & Mereghetti 2007,"XMM fev/2003, nível mais alto em 30 anos.",
+X Per,L_tipica,2.5e34-15e34,faixa histórica,2-10 keV (Fig.8),1,La Palombara & Mereghetti 2007,Variação em escalas de anos.,
+X Per,L_tipica,1.2e34,,2-8 keV,0.6,Mushtukov+2023,IXPE ago-set 2022.,
+X Per,L_tipica,<5e34,"~ (""below"")",bolométrica (acreção),0.6,Mushtukov+2023,,
+X Per,L_tipica,5e34,,bolométrica,0.81,Yatabe+2018,L de equilíbrio de torque (Pdot=0) no modelo GL.,
+X Per,L_tipica,1e35,~,não especificada,,White+1976 (citado em Doroshenko+2012),Fonte secundária.,
+X Per,L_crit_inferida,3e37,≈ (teórico),,,Mushtukov+2023,Valor crítico para B~1e13 G (Basko & Sunyaev 1976; Mushtukov+2015); X Per está muito abaixo.,

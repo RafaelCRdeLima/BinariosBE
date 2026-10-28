@@ -1,0 +1,28 @@
+{
+ "n_sim": 4000,
+ "componentes": {
+  "indicador": 0.1,
+  "trabalho": 0.30000000000000004,
+  "residual": 0.2
+ },
+ "LRT_limiar_assintotico": 2.70554345409542,
+ "LRT_limiar_calibrado": 2.396755519264408,
+ "sigma_fonte=0.0": {
+  "frac_rejeita_assintotico": 0.042,
+  "frac_rejeita_calibrado": 0.05,
+  "erro": 0.0034604912945996554,
+  "frac_LRT_zero": 0.589
+ },
+ "sigma_fonte=0.3": {
+  "frac_rejeita_assintotico": 0.178,
+  "frac_rejeita_calibrado": 0.20425,
+  "erro": 0.006478686209410053,
+  "frac_LRT_zero": 0.33125
+ },
+ "sigma_fonte=0.5": {
+  "frac_rejeita_assintotico": 0.38775,
+  "frac_rejeita_calibrado": 0.416,
+  "erro": 0.007979598987417852,
+  "frac_LRT_zero": 0.18775
+ }
+}
