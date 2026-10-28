@@ -6,8 +6,8 @@ Code and derived data for the paper *Magnetic-field diagnostics in Be/X-ray puls
 from torque reversals and propeller limits* (submitted to MNRAS). Everything in the paper can be regenerated
 from this repository and the public data listed below: the spin-up points, the likelihood fits of the torque,
 the torque-reversal luminosities and their calibration, the field-discrepancy index, the hierarchical model of
-the published transition luminosities, the XMM-Newton timing atlas, and all tables and figures except
-Tables 1 and 5, which are written by hand in the manuscript.
+the published transition luminosities, the XMM-Newton timing atlas, and all figures and the machine-generated
+tables (Tables 2-4, A1, A2, B1 and B2); Tables 1 and 5 are written by hand in the manuscript.
 
 The code is in Python. Its comments and variable names are in Portuguese; the docstring at the top of each
 script states what it does, what it reads and what it writes.
@@ -21,6 +21,7 @@ script states what it does, what it reads and what it writes.
 | `code/dados/literatura/` | Our compilation of published values: `luminosidades.csv` (luminosities of the accretion-column transitions; column `h1` says whether each value enters the clean sample and, if not, why) and `linhas_ciclotronicas.csv` (cyclotron-line measurements, used for the bolometric-correction calibration). Column `ref` gives the paper; full references are in the bibliography of the paper. |
 | `code/dados/parametros_fontes.csv` | Adopted Gaia DR3 distances and cyclotron energies. |
 | `code/dados/qualidade.json`, `mjd_obs.csv`, `nu_esperado.json` | Notes on individual XMM-Newton observations, their epochs, and the spin frequency expected from Fermi/GBM at each epoch. |
+| `code/dados/reducao.json` | Reduction parameters of each XMM-Newton observation (see below). |
 | `results/torque/` | Spin-up points (`pontos_*.csv`), global likelihood fits and profiles (`ajuste_global*.csv`, `perfil_*.npz`), torque-reversal fits and robustness variants (`reversao*.csv`), bootstrap calibration of the reversal test (`reversao_bootstrap.json`), bolometric-correction calibration (`kbol.csv`, `ajuste_B_prior_kbol.csv`). |
 | `results/sintese/` | Transitions in units of the critical luminosity (`transicoes_h1.csv`), propeller fields (`campos_propeller.csv`), field-discrepancy index (`indice.json`), hierarchical model and its calibration (`h1_*.json`), luminosity of each XMM-Newton observation (`atlas_ell.csv`). |
 | `results/atlas/` | XMM-Newton timing atlas: one JSON and the folded profiles per observation (`obs/`), catalogue, Fourier harmonics, pulsed fraction by energy, detections and upper limits (`correcoes.json`). |
@@ -44,9 +45,8 @@ into `code/dados/` with the file names the code expects:
   `tabgtigen` on the single-event light curve above 10 keV; events with FLAG = 0 and PATTERN <= 4
   (`evselect`); barycentric correction with `barycen`; responses from `rmfgen` and `arfgen`; and, for the
   observations without a Fermi/GBM frequency, a period search with `efsearch` (HEASoft 6.36).
-  `code/rodar_atlas.py` reads these products from `<root>/<source>/<ObsID>/`, with the source folder names of
-  `code/bexrb/fontes.py`. The reduced products are not included; the atlas products derived from them are in
-  `results/atlas/`.
+  The reduced products are not included; the atlas products derived from them are in `results/atlas/`, and
+  the next section describes what is needed to rebuild the atlas.
 - **Literature values** in `code/dados/literatura/`, `code/dados/parametros_fontes.csv` and the orbital
   elements in `code/bexrb/fontes.py` are taken from the papers cited in each entry (Gaia DR3 distances as
   tabulated by Reig 2026; orbits from the Fermi/GBM pages and the papers cited in Table A1). The critical
@@ -59,6 +59,31 @@ that normalizes all MAXI fluxes to the median used in the paper; with both, a la
 spin-up points unless the archives reprocess older data. `baixar_dados.py` reports whether each downloaded
 file is identical to the one used in the paper.
 
+## Rebuilding the XMM-Newton atlas
+
+`code/rodar_atlas.py <root> <output>` reads, for each observation, the folder `<root>/<source>/<ObsID>/`,
+with the source folder names of `code/bexrb/fontes.py` (`pasta`), and the following EPIC-pn products, where
+`sNNN` is the exposure (e.g. `s003`):
+
+| File | Contents | SAS task |
+|---|---|---|
+| `epn_sNNN_clean_bary.fits` | Calibrated events with FLAG = 0, PATTERN <= 4, PI 150-15000, within the flare GTI, barycentred; keeps the `STDGTInn` and `GTI0xx` extensions | `epproc`, `tabgtigen`, `evselect`, `barycen` |
+| `epn_sNNN_bary_source.fits` | The same events within the source region, with the same GTI extensions (the atlas reads the GTIs from this file) | `evselect` |
+| `epn_sNNN_src_spec.fits`, `epn_sNNN_bkg_spec.fits` | Source and background spectra, with `BACKSCAL` and `EXPOSURE` | `evselect`, `backscale` |
+| `epn_sNNN_src.arf` | Ancillary response of the source region | `arfgen` |
+
+`code/dados/reducao.json` gives, for each ObsID, the parameters used to make these products and that the atlas
+needs: the exposure (`exposicao`); the flare screening (`gti`: the background light-curve selection
+`(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)` in 100 s bins, the `tabgtigen` threshold in counts/s,
+and the `evselect` expressions of the clean and source events); the source and background regions
+(`regiao_fonte`, `regiao_fundo`, in detector units of 0.05 arcsec; the atlas re-extracts piled-up imaging
+observations as an annulus inside `regiao_fonte`, and timing-mode observations around the RAWX peak); the
+pile-up assessment with `epatplot` (`pileup`); the position used by `barycen` and its ephemeris
+(`baricentro`); and the period from the epoch-folding search (`periodo_inicial`), which is the centre of the
+pulsation search for the observations without a Fermi/GBM frequency. With these products and this file,
+`rodar_atlas.py` reproduces `results/atlas/`; on a different CPU the numbers can differ in the last digits
+(relative differences of order 1e-14), which leaves Table A2 and Figs A1-A2 unchanged.
+
 ## Running
 
     pip install -r requirements.txt
@@ -69,7 +94,7 @@ file is identical to the one used in the paper.
 takes about an hour, most of it in the parametric bootstraps of the hierarchical model (10^4 simulations per
 normalization in `h1_calibracao.py`); `NBOOT_H1` and `NBOOT_REV` reduce the number of simulations for a quick
 check, which changes only the bootstrap p values and the calibrated thresholds. Set `XMM_PRODUCTS` to the
-root of the reduced XMM-Newton products to rebuild the atlas as well.
+root of the reduced XMM-Newton products (previous section) to rebuild the atlas as well.
 
 The products were made with Python 3.12 and the package versions in `requirements.txt`; the bootstrap
 simulations of the hierarchical model and the atlas ran with Python 3.11, numpy 2.4.6, scipy 1.17.1 and

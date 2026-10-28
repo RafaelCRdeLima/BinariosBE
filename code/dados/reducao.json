@@ -1,0 +1,2295 @@
+{
+ "0674180101": {
+  "pasta_fonte": "1A0535_262",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(27100.2,27617.8,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 27100.221155582094,
+    "y": 27617.81945159016,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(27100.2,27617.8,600.0))",
+   "descricao": "círculo r=30.0\" em (27100,27618)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 27100.221155582094,
+    "y": 27617.81945159016,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(27100.2,27617.8,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 84.727395,
+   "dec_deg": 26.315788,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 103.31959252733989,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0112780801": {
+  "pasta_fonte": "4U0115_63"
+ },
+ "0112781001": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S001",
+   "mode": "TIMING",
+   "submode": "FASTTIMING"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && ((RAWX IN [27:47]))"
+  },
+  "regiao_fonte": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [27:47])",
+   "descricao": "colunas RAWX 27–47"
+  },
+  "regiao_fundo": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [3:5])"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.642186450696395,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0505280101": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(24281.8,24801.1,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 24281.83355014366,
+    "y": 24801.10012318325,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(24281.8,24801.1,600.0))",
+   "descricao": "círculo r=30.0\" em (24282,24801)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 24281.83355014366,
+    "y": 24801.10012318325,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(24281.8,24801.1,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.6137220653335267,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0790180301": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S001",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(27901.2,26611.4,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 27901.1550219534,
+    "y": 26611.403381506076,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(27901.2,26611.4,600.0))",
+   "descricao": "círculo r=30.0\" em (27901,26611)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 27901.1550219534,
+    "y": 26611.403381506076,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(27901.2,26611.4,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.613141363220385,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0804940201": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(27581.3,27085.1,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 27581.295751750476,
+    "y": 27085.11731032555,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(27581.3,27085.1,600.0))",
+   "descricao": "círculo r=30.0\" em (27581,27085)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 27581.295751750476,
+    "y": 27085.11731032555,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(27581.3,27085.1,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.613303952797624,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0883350301": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "U002",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(24058.9,25025.3,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 24058.861099087415,
+    "y": 25025.29194972809,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(24058.9,25025.3,600.0))",
+   "descricao": "círculo r=30.0\" em (24059,25025)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 24058.861099087415,
+    "y": 25025.29194972809,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(24058.9,25025.3,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.6132526214989675,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0883350401": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(24474.3,24519.0,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 24474.28001014234,
+    "y": 24518.954186075014,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(24474.3,24519.0,600.0))",
+   "descricao": "círculo r=30.0\" em (24474,24519)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 24474.28001014234,
+    "y": 24518.954186075014,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(24474.3,24519.0,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.6139740300963035,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0883350501": {
+  "pasta_fonte": "4U0115_63"
+ },
+ "0883350601": {
+  "pasta_fonte": "4U0115_63"
+ },
+ "0883350701": {
+  "pasta_fonte": "4U0115_63"
+ },
+ "0883350801": {
+  "pasta_fonte": "4U0115_63"
+ },
+ "0883350901": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "U002",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 7.933999999999999,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=7.934",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(24498.2,24456.9,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 24498.16991282703,
+    "y": 24456.937335364495,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(24498.2,24456.9,600.0))",
+   "descricao": "círculo r=30.0\" em (24498,24457)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 24498.16991282703,
+    "y": 24456.937335364495,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(24498.2,24456.9,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.594232212093047,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0883351001": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "U002",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(24013.7,25159.3,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 24013.735731482917,
+    "y": 25159.3337468956,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(24013.7,25159.3,600.0))",
+   "descricao": "círculo r=30.0\" em (24014,25159)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 24013.735731482917,
+    "y": 25159.3337468956,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(24013.7,25159.3,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.5879340960958466,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0883351201": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(24473.0,24517.0,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 24472.952792678156,
+    "y": 24516.95512980129,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(24473.0,24517.0,600.0))",
+   "descricao": "círculo r=30.0\" em (24473,24517)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 24472.952792678156,
+    "y": 24516.95512980129,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(24473.0,24517.0,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.5670515612350826,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0883351301": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 1.02,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=1.02",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(24382.7,24541.0,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 24382.70202510851,
+    "y": 24541.02135234567,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(24382.7,24541.0,600.0))",
+   "descricao": "círculo r=30.0\" em (24383,24541)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 24382.70202510851,
+    "y": 24541.02135234567,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(24382.7,24541.0,1200.0,2400.0))"
+  },
+  "pileup": "unmeasured",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.8436510454560464,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0883351501": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.7819999999999999,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.782",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(24365.4,24581.0,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 24365.448206498804,
+    "y": 24581.034472098818,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(24365.4,24581.0,600.0))",
+   "descricao": "círculo r=30.0\" em (24365,24581)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 24365.448206498804,
+    "y": 24581.034472098818,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(24365.4,24581.0,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.60611495259441,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0883351601": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "U002",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(23866.4,25967.5,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 23866.414677045937,
+    "y": 25967.477159133312,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(23866.4,25967.5,600.0))",
+   "descricao": "círculo r=30.0\" em (23866,25967)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 23866.414677045937,
+    "y": 25967.477159133312,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(23866.4,25967.5,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.6211266362300867,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0883351701": {
+  "pasta_fonte": "4U0115_63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(23865.1,26001.5,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 23865.087459812446,
+    "y": 26001.47849953663,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(23865.1,26001.5,600.0))",
+   "descricao": "círculo r=30.0\" em (23865,26001)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 23865.087459812446,
+    "y": 26001.47849953663,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(23865.1,26001.5,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 19.63321,
+   "dec_deg": 63.74252,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 3.6148297078289535,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0092820101": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "TIMING",
+   "submode": "FASTTIMING"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && ((RAWX IN [27:47]))"
+  },
+  "regiao_fonte": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [27:47])",
+   "descricao": "colunas RAWX 27–47"
+  },
+  "regiao_fundo": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [3:5])"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 12.105313671376196,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0092820201": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "TIMING",
+   "submode": "FASTTIMING"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && ((RAWX IN [27:47]))"
+  },
+  "regiao_fonte": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [27:47])",
+   "descricao": "colunas RAWX 27–47"
+  },
+  "regiao_fundo": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [3:5])"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 12.491078273956322,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0092820301": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "TIMING",
+   "submode": "FASTTIMING"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && ((RAWX IN [27:47]))"
+  },
+  "regiao_fonte": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [27:47])",
+   "descricao": "colunas RAWX 27–47"
+  },
+  "regiao_fundo": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [3:5])"
+  },
+  "pileup": "inconclusive",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 40.50466432430318,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0092820801": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "TIMING",
+   "submode": "FASTTIMING"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && ((RAWX IN [27:47]))"
+  },
+  "regiao_fonte": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [27:47])",
+   "descricao": "colunas RAWX 27–47"
+  },
+  "regiao_fundo": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [3:5])"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 11.217204315861462,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0092821101": {
+  "pasta_fonte": "PSRB1259-63"
+ },
+ "0092821201": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "TIMING",
+   "submode": "FASTTIMING"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && ((RAWX IN [27:47]))"
+  },
+  "regiao_fonte": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [27:47])",
+   "descricao": "colunas RAWX 27–47"
+  },
+  "regiao_fundo": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [3:5])"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 11.043292160181613,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0201920101": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S001",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(25690.2,23922.4,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 25690.24399150347,
+    "y": 23922.426706951188,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(25690.2,23922.4,600.0))",
+   "descricao": "círculo r=30.0\" em (25690,23922)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 25690.24399150347,
+    "y": 23922.426706951188,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(25690.2,23922.4,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 9.97979963402815,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0201920201": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S001",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(26161.2,23862.4,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 26161.174622795625,
+    "y": 23862.425598175643,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(26161.2,23862.4,600.0))",
+   "descricao": "círculo r=30.0\" em (26161,23862)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 26161.174622795625,
+    "y": 23862.425598175643,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(26161.2,23862.4,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 5.319412199218023,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0201920301": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S001",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(26461.5,23926.4,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 26461.45903644845,
+    "y": 23926.36778271626,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(26461.5,23926.4,600.0))",
+   "descricao": "círculo r=30.0\" em (26461,23926)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 26461.45903644845,
+    "y": 23926.36778271626,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(26461.5,23926.4,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 7.177187839356001,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0201920401": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S001",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(26370.2,23916.4,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 26370.183157868996,
+    "y": 23916.39006544497,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(26370.2,23916.4,600.0))",
+   "descricao": "círculo r=30.0\" em (26370,23916)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 26370.183157868996,
+    "y": 23916.39006544497,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(26370.2,23916.4,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 5.5759721408475595,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0201920501": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S001",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(26313.3,23902.4,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 26313.30108863937,
+    "y": 23902.401870797596,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(26313.3,23902.4,600.0))",
+   "descricao": "círculo r=30.0\" em (26313,23902)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 26313.30108863937,
+    "y": 23902.401870797596,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(26313.3,23902.4,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 7.877842925635945,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0504550501": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S007",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(26691.6,27832.3,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 26691.632982351803,
+    "y": 27832.293624142658,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(26691.6,27832.3,600.0))",
+   "descricao": "círculo r=30.0\" em (26692,27832)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 26691.632982351803,
+    "y": 27832.293624142658,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(26691.6,27832.3,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 14.386615746972593,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0504550601": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S018",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(26454.8,27964.4,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 26454.844845425272,
+    "y": 27964.36985827238,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(26454.8,27964.4,600.0))",
+   "descricao": "círculo r=30.0\" em (26455,27964)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 26454.844845425272,
+    "y": 27964.36985827238,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(26454.8,27964.4,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 54.92355201574957,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0504550701": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S012",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(25662.5,27974.4,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 25662.46437409715,
+    "y": 27974.423679594383,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(25662.5,27974.4,600.0))",
+   "descricao": "círculo r=30.0\" em (25662,27974)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 25662.46437409715,
+    "y": 27974.423679594383,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(25662.5,27974.4,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 11.51975707194603,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0653640401": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S007",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(25165.1,23992.3,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 25165.076983463834,
+    "y": 23992.298886783843,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(25165.1,23992.3,600.0))",
+   "descricao": "círculo r=30.0\" em (25165,23992)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 25165.076983463834,
+    "y": 23992.298886783843,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(25165.1,23992.3,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 19.605122854762055,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0653640501": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S008",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(25933.6,23880.4,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 25933.646339446197,
+    "y": 23880.439794121427,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(25933.6,23880.4,600.0))",
+   "descricao": "círculo r=30.0\" em (25934,23880)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 25933.646339446197,
+    "y": 23880.439794121427,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(25933.6,23880.4,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 26.63074809634254,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0653640601": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S008",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(26801.4,24014.2,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 26801.428600546635,
+    "y": 24014.248628887333,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(26801.4,24014.2,600.0))",
+   "descricao": "círculo r=30.0\" em (26801,24014)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 26801.428600546635,
+    "y": 24014.248628887333,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(26801.4,24014.2,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 13.083148065395875,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0653640701": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(25165.1,23988.3,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 25165.076983120503,
+    "y": 23988.298885911634,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(25165.1,23988.3,600.0))",
+   "descricao": "círculo r=30.0\" em (25165,23988)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 25165.076983120503,
+    "y": 23988.298885911634,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(25165.1,23988.3,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 9.148514563461315,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0881420201": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S001",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(25354.2,23922.4,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 25354.242927472318,
+    "y": 23922.360598283107,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(25354.2,23922.4,600.0))",
+   "descricao": "círculo r=30.0\" em (25354,23922)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 25354.242927472318,
+    "y": 23922.360598283107,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(25354.2,23922.4,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 18.611605520834924,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0881420301": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S001",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(25199.5,23978.3,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 25199.47079091221,
+    "y": 23978.311420128928,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(25199.5,23978.3,600.0))",
+   "descricao": "círculo r=30.0\" em (25199,23978)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 25199.47079091221,
+    "y": 23978.311420128928,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(25199.5,23978.3,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 22.65643631535782,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0881420401": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S001",
+   "mode": "IMAGING",
+   "submode": "PRIMESMALLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(25450.8,23936.4,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 25450.810162571313,
+    "y": 23936.385305494343,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(25450.8,23936.4,600.0))",
+   "descricao": "círculo r=30.0\" em (25451,23936)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 25450.810162571313,
+    "y": 23936.385305494343,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(25450.8,23936.4,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 20.22658371797459,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0915391301": {
+  "pasta_fonte": "PSRB1259-63",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(26833.2,24014.2,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 26833.176730976833,
+    "y": 24014.23458837918,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(26833.2,24014.2,600.0))",
+   "descricao": "círculo r=30.0\" em (26833,24014)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 26833.176730976833,
+    "y": 24014.23458837918,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(26833.2,24014.2,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 195.69856,
+   "dec_deg": -63.83573,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 19.132442062228602,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0811212801": {
+  "pasta_fonte": "SwiftJ0243.6_6124",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "TIMING",
+   "submode": "FASTTIMING"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && ((RAWX IN [27:47]))"
+  },
+  "regiao_fonte": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [27:47])",
+   "descricao": "colunas RAWX 27–47"
+  },
+  "regiao_fundo": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [3:5])"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 40.918439,
+   "dec_deg": 61.434377,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 9.790075394794023,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0811212901": {
+  "pasta_fonte": "SwiftJ0243.6_6124",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "TIMING",
+   "submode": "FASTTIMING"
+  },
+  "gti": {
+   "limiar_cts_s": 4.002,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=4.002",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && ((RAWX IN [27:47]))"
+  },
+  "regiao_fonte": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [27:47])",
+   "descricao": "colunas RAWX 27–47"
+  },
+  "regiao_fundo": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [3:5])"
+  },
+  "pileup": "inconclusive",
+  "baricentro": {
+   "ra_deg": 40.918439,
+   "dec_deg": 61.434377,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 9.793985028395216,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0506190101": {
+  "pasta_fonte": "V0332_53",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(27287.3,27475.2,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 27287.327588138993,
+    "y": 27475.238237714504,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(27287.3,27475.2,600.0))",
+   "descricao": "círculo r=30.0\" em (27287,27475)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 27287.327588138993,
+    "y": 27475.238237714504,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(27287.3,27475.2,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 53.749632,
+   "dec_deg": 53.173138,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 4.38419369374196,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0763470301": {
+  "pasta_fonte": "V0332_53",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "TIMING",
+   "submode": "FASTTIMING"
+  },
+  "gti": {
+   "limiar_cts_s": 11.277999999999999,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=11.278",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && ((RAWX IN [27:47]))"
+  },
+  "regiao_fonte": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [27:47])",
+   "descricao": "colunas RAWX 27–47"
+  },
+  "regiao_fundo": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [3:5])"
+  },
+  "pileup": "inconclusive",
+  "baricentro": {
+   "ra_deg": 53.749632,
+   "dec_deg": 53.173138,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 4.3758079834572525,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0763470401": {
+  "pasta_fonte": "V0332_53",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "TIMING",
+   "submode": "FASTTIMING"
+  },
+  "gti": {
+   "limiar_cts_s": 7.819999999999999,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=7.82",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && ((RAWX IN [27:47]))"
+  },
+  "regiao_fonte": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [27:47])",
+   "descricao": "colunas RAWX 27–47"
+  },
+  "regiao_fundo": {
+   "tipo": "rawx",
+   "geometria": {},
+   "expressao": "(RAWX IN [3:5])"
+  },
+  "pileup": "inconclusive",
+  "baricentro": {
+   "ra_deg": 53.749632,
+   "dec_deg": 53.173138,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 4.375405587159787,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0151380101": {
+  "pasta_fonte": "XPer",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S002",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 1.184,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=1.184",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(27402.1,27373.9,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 27402.068963741567,
+    "y": 27373.928099099034,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(27402.1,27373.9,600.0))",
+   "descricao": "círculo r=30.0\" em (27402,27374)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 27402.068963741567,
+    "y": 27373.928099099034,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(27402.1,27373.9,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 58.846157,
+   "dec_deg": 31.045844,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 837.8378378378379,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0151380201": {
+  "pasta_fonte": "XPer",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "U002",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.4,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.4",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(27402.1,27373.9,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 27402.068963741567,
+    "y": 27373.928099099034,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(27402.1,27373.9,600.0))",
+   "descricao": "círculo r=30.0\" em (27402,27374)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 27402.068963741567,
+    "y": 27373.928099099034,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(27402.1,27373.9,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 58.846157,
+   "dec_deg": 31.045844,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 570.0539004722278,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ },
+ "0600980101": {
+  "pasta_fonte": "XPer",
+  "exposicao": {
+   "instrument": "EPN",
+   "exposure_id": "S003",
+   "mode": "IMAGING",
+   "submode": "PRIMEFULLWINDOW"
+  },
+  "gti": {
+   "limiar_cts_s": 0.7599999999999999,
+   "banda_eventos_ev": [
+    150,
+    15000
+   ],
+   "expressao_curva_fundo": "(#XMMEA_EP) && (PI>10000&&PI<12000) && (PATTERN==0)",
+   "bin_curva_fundo_s": 100.0,
+   "expressao_tabgtigen": "RATE<=0.76",
+   "expressao_eventos_limpos": "(#XMMEA_EP) && (FLAG==0) && (PATTERN<=4) && (PI>150&&PI<15000) && (gti(<gti>,TIME))",
+   "expressao_eventos_fonte": "(FLAG==0) && (PATTERN<=4) && (((X,Y) IN circle(27404.6,27233.9,600.0)))"
+  },
+  "regiao_fonte": {
+   "tipo": "circle",
+   "geometria": {
+    "x": 27404.639212080376,
+    "y": 27233.928639306225,
+    "radius": 600.0
+   },
+   "expressao": "((X,Y) IN circle(27404.6,27233.9,600.0))",
+   "descricao": "círculo r=30.0\" em (27405,27234)"
+  },
+  "regiao_fundo": {
+   "tipo": "annulus",
+   "geometria": {
+    "x": 27404.639212080376,
+    "y": 27233.928639306225,
+    "inner": 1200.0,
+    "outer": 2400.0
+   },
+   "expressao": "((X,Y) IN annulus(27404.6,27233.9,1200.0,2400.0))"
+  },
+  "pileup": "clean",
+  "baricentro": {
+   "ra_deg": 58.846157,
+   "dec_deg": 31.045844,
+   "efemeride": "DE405"
+  },
+  "periodo_inicial": {
+   "periodo_s": 836.7089326305025,
+   "metodos": [
+    "efsearch",
+    "z2_refine"
+   ],
+   "harmonicos_refino": 2
+  }
+ }
+}

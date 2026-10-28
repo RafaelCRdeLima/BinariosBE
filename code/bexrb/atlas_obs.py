@@ -37,6 +37,9 @@ NBINS = 32
 # limiares de taxa de pileup do pn (XMM Users Handbook, tabela 3; 1% de perda de fluxo/padrão)
 _ARQ_NU = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "dados", "nu_esperado.json")
 NU_ESPERADO = json.load(open(_ARQ_NU)) if os.path.exists(_ARQ_NU) else {}
+# metadados da redução de cada observação (região da fonte, corte de surtos, baricentro, período inicial)
+_ARQ_RED = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "dados", "reducao.json")
+REDUCAO = json.load(open(_ARQ_RED)) if os.path.exists(_ARQ_RED) else {}
 PILEUP_LIM = {"PRIMEFULLWINDOW": 6.0, "PRIMEFULLWINDOWEXTENDED": 6.0, "PRIMELARGEWINDOW": 10.0,
               "PRIMESMALLWINDOW": 50.0, "FASTTIMING": 800.0, "TIMING": 800.0, "FASTBURST": 60000.0}
 
@@ -142,8 +145,7 @@ def _extrair(pasta, fev, expo):
         lim = PILEUP_LIM.get(submodo)
         razao = t[(e >= 0.3) & (e < 10)].size / expo / lim if lim else 0.0
         if razao > 1.0:
-            s = json.load(open(os.path.join(pasta, "session.json")))
-            g = s["steps"]["regions"]["parameters"]["source_geometry"]
+            g = REDUCAO[os.path.basename(os.path.normpath(pasta))]["regiao_fonte"]["geometria"]
             r_in = (7.5 if razao <= 3 else 12.5 if razao <= 8 else 17.5) / 0.05
             fc = _maior_arquivo(pasta, "epn_*_clean_bary.fits")
             dd = fits.getdata(fc, "EVENTS")
@@ -303,12 +305,10 @@ def analisar(pasta_obs, saida):
         "dias_desde_periastro": float(fo * fonte.orbita.porb_d),
         "escala_fundo": escala_t, "n_eventos": int(t.size),
     })
-    sess = os.path.join(pasta_obs, "session.json")
-    if os.path.exists(sess):
-        s = json.load(open(sess))
-        pu = s["steps"].get("pileup", {}).get("parameters", {}).get("result", {})
-        res["pileup_reducao"] = pu.get("verdict")
-        res["regiao_fonte"] = s["steps"].get("regions", {}).get("parameters", {}).get("source_description")
+    meta = REDUCAO.get(obsid, {})
+    if meta:
+        res["pileup_reducao"] = meta.get("pileup")
+        res["regiao_fonte"] = (meta.get("regiao_fonte") or {}).get("descricao")
 
     # taxas, cores e fluxo desdobrado
     ea, aa = _arf(pasta_obs)
@@ -360,12 +360,10 @@ def analisar(pasta_obs, saida):
     dur = float(td.max() - td.min())
     k_orb = 2 * np.pi * orb.asini_lts / (orb.porb_d * DIA * np.sqrt(1 - orb.e ** 2)) * (1 + orb.e)
     nu0 = 1.0 / fonte.p_spin_s
-    man = glob.glob(os.path.join(pasta_obs, "pulsaris", "*_manifest.json"))
-    if man:
-        p_x = json.load(open(man[0])).get("phase", {}).get("period_s")
-        if p_x:
-            nu0 = 1.0 / p_x
-            res["periodo_reducao_s"] = float(p_x)
+    p_x = (meta.get("periodo_inicial") or {}).get("periodo_s")
+    if p_x:
+        nu0 = 1.0 / p_x
+        res["periodo_reducao_s"] = float(p_x)
     esp = NU_ESPERADO.get(obsid)
     if esp and esp.get("fixo"):
         # período publicado a partir destes mesmos dados (poucos ciclos: a busca não resolve)
